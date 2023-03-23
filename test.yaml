@@ -1,0 +1,26 @@
+type: custom:button-card
+entity: sensor.midea_tank_full
+label: Tank Full
+icon: mdi:beer
+show_label: true
+show_name: false
+show_icon: true
+styles:
+  card:
+    - height: 60px
+    - font-size: 13px
+  label:
+    - color: '#3f8291'
+  icon:
+    - color: '#3f8291'
+state:
+  - value: 'True'
+    styles:
+      card:
+        - height: 60px
+        - background: red
+        - animation: blink 3s ease infinite
+      label:
+        - color: white
+      icon:
+        - color: white
